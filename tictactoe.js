@@ -1,7 +1,13 @@
-const block = document.querySelectorAll('.block');
-block.addeventlistener
+document.addEventListener('DOMContentLoaded', () => {
+    const squares = document.querySelectorAll('.block')
+    console.log(squares)
 
+        
+        for(let i = 0; i<squares.length; i++){
+            squares[i].addEventListener('click', clickOn)
+        }
 
-for ( let i = 0; i<block.length; i++) {
-    
-}
+    function clickOn() {
+        alert("hello");
+    }
+})
