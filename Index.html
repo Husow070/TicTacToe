@@ -7,28 +7,24 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>Tic-Tac-Toe</h1>
-        <div class="tictactoe-area">
-        <div id="block_0" class="block"></div>
-        <div id="block_1" class="block"></div>
-        <div id="block_2" class="block"></div>
-        <div id="block_3" class="block"></div>
-        <div id="block_4" class="block"></div>
-        <div id="block_5" class="block"></div>
-        <div id="block_6" class="block"></div>
-        <div id="block_7" class="block"></div>
-        <div id="block_8" class="block"></div>
-        <div class="board"></div>
-        <div class="field">
-            <label for ="starting">starting player</label>
-            <select id = "starting">
-                <option value="player1">player1</option>
-                <option value="player2">player2</option>
-            </select>
-        <button id="newGame">New Game</button>
-        </div>
-    </div>
-    <script type="module" src="tictactoe.js"></script>
+  <div class="container">
+      <h1 class="title">TicTacToe</h1>
+      <div class="status-action">
+          <div class="status">X is next</div>
+          <div class="reset">Reset</div>
+      </div>
+      <div class="game-board">
+        <div class="box" q1 ></div>
+        <div class="box" q2></div>
+        <div class="box" q3></div>
+        <div class="box" q4></div>
+        <div class="box" q5></div>
+        <div class="box" q6></div>
+        <div class="box" q7></div>
+        <div class="box" q8></div>
+        <div class="box" q9></div>
+      </div>
+  </div>
+  <script src="tictactoe.js"></script>
 </body>
 </html>

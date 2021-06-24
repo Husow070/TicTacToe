@@ -1,13 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const squares = document.querySelectorAll('.block')
-    console.log(squares)
+const statusS = document.querySelector('.status');
+const reset = document.querySelector ('.reset');
+const cellBOX = document.querySelectorAll('.box')
 
-        
-        for(let i = 0; i<squares.length; i++){
-            squares[i].addEventListener('click', clickOn)
-        }
 
-    function clickOn() {
-        alert("hello");
-    }
-})
+//game variables
+let GameIsCurrent = true;
+let xTurned = true;
+
+//event handlers
+const handleReset = (e) => {
+    console.log(e);
+};
+
+const handleBoxClick = (e) => {
+    console.log(e);
+};
+if (xTurned) {
+    console.log(e.target);
+}
+
+//event listeners
+
+reset.addEventListener("click", handleReset);
+
+for (let i = 0; i < cellBOX.length; i++) {
+    cellBOX[i].addEventListener("click", handleBoxClick);
+  }
