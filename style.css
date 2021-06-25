@@ -49,3 +49,6 @@ cursor: pointer;
 justify-content: center;
 color: #AAA;
 }
+#win {
+  color: aqua;
+}
